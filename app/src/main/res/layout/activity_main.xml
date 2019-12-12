@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container">
+
+
+        <!-- Header Aligned to top -->
+        <RelativeLayout
+            android:background="AFA7EF"
+            android:gravity="center"
+            android:id="@+id/header"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:text="Header"
+                android:textColor="#000000"
+                android:textsize="20sp" />
+        </RelativeLayout>
+
+        <!-- Footer Aligned to bottom -->
+        <RelativeLayout
+            android:background="#6AED83"
+            android:gravity="center"
+            android:id="@+id/footer"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="footer" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
